@@ -373,18 +373,11 @@ public class SmartCrudEngine {
 		hm.put("UNM", "RAVI");
 		hm.put("PWD", "Pass12!@");
 
-		// String jsonval =
-		// "{\"main_sign\":\"insert\",\"qtn\":\"YourTableName\",\"qdt\":{\"column1\":\"value1\",\"column2\":\"value2\",\"column3\":\"value3\"},\"rtp\":\"query\"}";
-		// String jsonval
-		// ="{\"main_sign\":\"select\",\"qtn\":\"YourTableName\",\"qcl\":[col1,col2,col3,col4,col5,col6],\"qcn\":\"WHERE
-		// col1 is not null\"},\"rtp\":\"execute\"}";
-		// String jsonval =
-		// "{\"main_sign\":\"delete\",\"qtn\":\"YourTableName\",\"qcn\":\"where col1 is
-		// not null\"},\"rtp\":\"execute\"}";
-		// String jsonval =
-		// "{\"main_sign\":\"update\",\"qtn\":\"YourTableName\",\"qdt\":{\"column1\":\"value1\",\"column2\":\"value2\",\"column3\":\"select
-		// 'raviteja' from dual\"},\"qcn\":\" col1 is not null\"},\"rtp\":\"execute\"}";
-String jsonval = "{\"main_sign\":\"select\",\"raw_qry\":\"select count(1) as cnt from ctuser_master where user_name={UNM} and password={PWD}\",\"params\":" + hm + ",\"rtp\":\"execute\"}";
+		// String jsonval ="{\"main_sign\":\"insert\",\"qtn\":\"YourTableName\",\"qdt\":{\"column1\":\"value1\",\"column2\":\"value2\",\"column3\":\"value3\"},\"rtp\":\"query\"}";
+		// String jsonval ="{\"main_sign\":\"select\",\"qtn\":\"YourTableName\",\"qcl\":[col1,col2,col3,col4,col5,col6],\"qcn\":\"WHERE col1 is not null\"},\"rtp\":\"execute\"}";
+		// String jsonval ="{\"main_sign\":\"delete\",\"qtn\":\"YourTableName\",\"qcn\":\"where col1 is not null\"},\"rtp\":\"execute\"}";
+		// String jsonval ="{\"main_sign\":\"update\",\"qtn\":\"YourTableName\",\"qdt\":{\"column1\":\"value1\",\"column2\":\"value2\",\"column3\":\"select 'raviteja' from dual\"},\"qcn\":\" col1 is not null\"},\"rtp\":\"execute\"}";
+		  String jsonval = "{\"main_sign\":\"select\",\"raw_qry\":\"select count(1) as cnt from ctuser_master where user_name={UNM} and password={PWD}\",\"params\":" + hm + ",\"rtp\":\"execute\"}";
 
 		JSONObject input = new JSONObject(jsonInsert);
 		//String query = executer(input);
