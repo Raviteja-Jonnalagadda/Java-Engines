@@ -57,7 +57,7 @@ public class WebInterfaceEngine {
 	protected static String dispval = null;
 	/** Stores intermediate input value for processing. */
 	protected static String inval = null;
-
+  
 	/**
      * Generates an HTML field string based on the provided field type and name.
      *
